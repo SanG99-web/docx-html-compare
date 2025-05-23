@@ -1,0 +1,8 @@
+<!doctype html>
+<title>Comparison Results</title>
+<h2>Comparison Results</h2>
+<ul>
+  {% for file in files %}
+    <li><a href="{{ url_for('download_result', filename=file) }}" target="_blank">{{ file }}</a></li>
+  {% endfor %}
+</ul>
